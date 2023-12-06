@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Searchresult</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="header-navigation nav">
+    <div class="header-navigation__top header-navigation-top">
+      <div class="header-navigation-top__logo">
+        <img src="img/NOVENTIQ.png" alt="logo">
+      </div>
+      <button class="header-navigation-top__menu" id="mobile-menu-btn">
+        <img src="img/menu_burger.png" alt="">
+      </button>
+    </div>
+    <div class="header-navigation__mobile header-navigation-mobile" id="mobile-menu">
+      <button class="header-navigation-mobile__close-button" id="menu-close">
+        <img src="img/menu_burger_close.png" alt="menu_burger_close">
+      </button>
+
+      <ul class="header-navigation-mobile__list header-navigation-mobile-list">
+        <li class="header-navigation-mobile-list-item active">
+          <a class="header-navigation-mobile-list-item-link" href="#">
+            Catalogue
+          </a>
+        </li>
+        <li class="header-navigation-mobile-list-item">
+          <a class="header-navigation-mobile-list-item-link" href="#">
+            Log In/Sign Up
+          </a>
+        </li>
+        <li class="header-navigation-mobile-list-item">
+          <a class="header-navigation-mobile-list-item-link" href="#">
+            Knowledge Base
+          </a>
+        </li>
+      </ul>
+
+      <div class="header-navigation__search-field header-navigation-search-field">
+        <div class="header-navigation-search-field__icon-search">
+          <img src="img/search.svg" alt="search">
+        </div>
+        <input class="header-navigation-search-field__input" type="search" name="search" id="search"
+          placeholder="Search">
+        <div class="header-navigation-search-field__icon-reset">
+          <img src="img/close.svg" alt="close">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="searchresult-wrapper">
+  <div class="searchresult">
+    <div class="searchresult__title">
+      Search
+    </div>
+    <div class="searchresult__search-field searchresult-search-field">
+      <div class="searchresult-search-field__icon-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M16.535 15.12L20.707 19.293C20.8892 19.4816 20.99 19.7342 20.9877 19.9964C20.9854 20.2586 20.8803 20.5094 20.6948 20.6948C20.5094 20.8803 20.2586 20.9854 19.9964 20.9877C19.7342 20.99 19.4816 20.8892 19.293 20.707L15.121 16.535C13.6561 17.6419 11.8258 18.1517 9.99956 17.9615C8.17336 17.7713 6.48734 16.8953 5.28188 15.5104C4.07643 14.1255 3.44134 12.3348 3.50483 10.4998C3.56832 8.66481 4.32567 6.92227 5.62397 5.62397C6.92227 4.32567 8.66481 3.56832 10.4998 3.50483C12.3348 3.44134 14.1255 4.07643 15.5104 5.28188C16.8953 6.48734 17.7713 8.17336 17.9615 9.99956C18.1517 11.8258 17.6419 13.6561 16.535 15.121V15.12ZM10.75 16C12.1424 16 13.4778 15.4469 14.4623 14.4623C15.4469 13.4778 16 12.1424 16 10.75C16 9.35765 15.4469 8.02229 14.4623 7.03772C13.4778 6.05315 12.1424 5.50003 10.75 5.50003C9.35765 5.50003 8.02229 6.05315 7.03772 7.03772C6.05315 8.02229 5.50003 9.35765 5.50003 10.75C5.50003 12.1424 6.05315 13.4778 7.03772 14.4623C8.02229 15.4469 9.35765 16 10.75 16Z"
+            fill="#ABACAC" />
+        </svg>
+      </div>
+      <input class="searchresult-search-field__input" type="search" name="search" id="search" placeholder="Search">
+      <div class="searchresult-search-field__icon-reset">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.2999 5.70002C18.1143 5.51438 17.8625 5.4101 17.5999 5.4101C17.3374 5.4101 17.0856 5.51438 16.8999 5.70002L11.9999 10.6L7.09992 5.70002C6.91363 5.51746 6.66282 5.41579 6.40199 5.41711C6.14116 5.41842 5.89139 5.52262 5.70696 5.70706C5.52252 5.8915 5.41832 6.14127 5.417 6.40209C5.41569 6.66292 5.51736 6.91373 5.69992 7.10002L10.5999 12L5.69992 16.9C5.51736 17.0863 5.41569 17.3371 5.417 17.598C5.41832 17.8588 5.52252 18.1086 5.70696 18.293C5.89139 18.4774 6.14116 18.5816 6.40199 18.5829C6.66282 18.5843 6.91363 18.4826 7.09992 18.3L11.9999 13.4L16.8999 18.3C17.0862 18.4826 17.337 18.5843 17.5978 18.5829C17.8587 18.5816 18.1084 18.4774 18.2929 18.293C18.4773 18.1086 18.5815 17.8588 18.5828 17.598C18.5842 17.3371 18.4825 17.0863 18.2999 16.9L13.3999 12L18.2999 7.10002C18.4856 6.91437 18.5898 6.66257 18.5898 6.40002C18.5898 6.13748 18.4856 5.88568 18.2999 5.70002Z"
+            fill="#ABACAC" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="searchresult__products searchresult-products">
+      <div class="searchresult-products__title">
+        Products
+      </div>
+      <ul class="searchresult-products__list searchresult-products-list">
+        <li class="searchresult-products-list-item">
+          <div class="searchresult-products-list-item__title searchresult-products-list-item-title">
+            KES for Business - <span class="searchresult-products-list-item-title-select">Advanced</span> RU 10-14 Node 1M
+          </div>
+          <a class="searchresult-products-list-item__link" href="#">
+            http://softline.market/product/393/
+          </a>
+          <hr class="searchresult-products-list-item__divider">
+        </li>
+        <li class="searchresult-products-list-item">
+          <div class="searchresult-products-list-item__title searchresult-products-list-item-title">
+            KES for Business - Advanced RU 10-14 Node 1M
+          </div>
+          <a class="searchresult-products-list-item__link" href="#">
+            http://softline.market/product/393/
+          <a/>
+          <hr class="searchresult-products-list-item__divider">
+        </li>
+        <li class="searchresult-products-list-item">
+          <div class="searchresult-products-list-item__title searchresult-products-list-item-title">
+            KES for Business - Advanced RU 10-14 Node 1M
+          </div>
+          <a class="searchresult-products-list-item__link" href="#">
+            http://softline.market/product/393/
+          </a>
+          <hr class="searchresult-products-list-item__divider">
+        </li>
+      </ul>
+    </div>
+
+    <div class="searchresult__pages searchresult-pages">
+      <div class="searchresult-pages__title">
+        Pages
+      </div>
+      <ul class="searchresult-pages__list searchresult-pages-list">
+        <li class="searchresult-pages-list-item">
+          <div class="searchresult-pages-list-item__title searchresult-pages-list-item-title">
+            KES for Business - <span class="searchresult-pages-list-item-title-select">Advanced</span>  RU 10-14 Node 1M
+          </div>
+          <a class="searchresult-pages-list-item__link" href="#">
+            http://softline.market/product/393/
+          <a/>
+          <hr class="searchresult-pages-list-item__divider">
+        </li>
+        <li class="searchresult-pages-list-item">
+          <div class="searchresult-pages-list-item__title searchresult-pages-list-item-title">
+            KES for Business - Advanced RU 10-14 Node 1M
+          </div>
+          <a class="searchresult-pages-list-item__link" href="#">
+            http://softline.market/product/393/
+          </a>
+          <hr class="searchresult-pages-list-item__divider">
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-top__contacts footer-top-contacts">
+      <div class="footer-top__title">
+        Contacts
+      </div>
+      <ul class="footer-top-contacts-list">
+        <li class="footer-top-contacts-list-item footer-top-contacts-list__item">e-mail: <a
+            class="footer-top-contacts-list__link"
+            href="mailto:malaysia@subs.noventiq.com">malaysia@subs.noventiq.com</a></li>
+        <li class="footer-top-contacts-list-item footer-top-contacts-list__item">Menara UOA Bangsar, A-33A-02, No.5,
+          Jalan
+          Bangsar Utama 1, Bangsar, 59000 Kuala
+          Lumpur</li>
+        <li class="footer-top-contacts-list-item footer-top-contacts-list__item">Softline Solutions International Sdn
+          Bhd</li>
+      </ul>
+    </div>
+    <div class="footer-top__catalog footer-top-catalog">
+      <div class="footer-top__title">
+        Catalog
+      </div>
+      <ul class="footer-top-catalog-list">
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Office 365 plans</a></li>
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Microsoft 365 Business</a></li>
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Microsoft 365 Enterprise</a></li>
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Windows Subscription</a></li>
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Software Subscription</a></li>
+        <li class="footer-top-catalog-list-item footer-top-catalog-list__item"><a class="footer-top-catalog-list__link"
+            href="#">Azure</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__social footer-top-social">
+      <div class="footer-top__title">
+        Social
+      </div>
+      <ul class="footer-top-social-list">
+        <li class="footer-top-social-list-item footer-top-social-list__item">
+          <a class="footer-top-social-list__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"
+              width="512" height="512">
+              <g>
+                <path
+                  d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z" />
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-top-social-list-item footer-top-social-list__item">
+          <a class="footer-top-social-list__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"
+              width="512" height="512">
+              <path id="Logo_00000038394049246713568260000012923108920998390947_"
+                d="M21.543,7.104c0.014,0.211,0.014,0.423,0.014,0.636  c0,6.507-4.954,14.01-14.01,14.01v-0.004C4.872,21.75,2.252,20.984,0,19.539c0.389,0.047,0.78,0.07,1.172,0.071  c2.218,0.002,4.372-0.742,6.115-2.112c-2.107-0.04-3.955-1.414-4.6-3.42c0.738,0.142,1.498,0.113,2.223-0.084  c-2.298-0.464-3.95-2.483-3.95-4.827c0-0.021,0-0.042,0-0.062c0.685,0.382,1.451,0.593,2.235,0.616  C1.031,8.276,0.363,5.398,1.67,3.148c2.5,3.076,6.189,4.946,10.148,5.145c-0.397-1.71,0.146-3.502,1.424-4.705  c1.983-1.865,5.102-1.769,6.967,0.214c1.103-0.217,2.16-0.622,3.127-1.195c-0.368,1.14-1.137,2.108-2.165,2.724  C22.148,5.214,23.101,4.953,24,4.555C23.339,5.544,22.507,6.407,21.543,7.104z" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-top-social-list-item footer-top-social-list__item">
+          <a class="footer-top-social-list__link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"
+              width="512" height="512">
+              <g>
+                <path id="Path_2525"
+                  d="M23.002,21.584h0.227l-0.435-0.658l0,0c0.266,0,0.407-0.169,0.409-0.376c0-0.008,0-0.017-0.001-0.025   c0-0.282-0.17-0.417-0.519-0.417h-0.564v1.476h0.212v-0.643h0.261L23.002,21.584z M22.577,20.774h-0.246v-0.499h0.312   c0.161,0,0.345,0.026,0.345,0.237c0,0.242-0.186,0.262-0.412,0.262" />
+                <path id="Path_2520"
+                  d="M17.291,19.073h-3.007v-4.709c0-1.123-0.02-2.568-1.564-2.568c-1.566,0-1.806,1.223-1.806,2.487v4.79H7.908   V9.389h2.887v1.323h0.04c0.589-1.006,1.683-1.607,2.848-1.564c3.048,0,3.609,2.005,3.609,4.612L17.291,19.073z M4.515,8.065   c-0.964,0-1.745-0.781-1.745-1.745c0-0.964,0.781-1.745,1.745-1.745c0.964,0,1.745,0.781,1.745,1.745   C6.26,7.284,5.479,8.065,4.515,8.065L4.515,8.065 M6.018,19.073h-3.01V9.389h3.01V19.073z M18.79,1.783H1.497   C0.68,1.774,0.01,2.429,0,3.246V20.61c0.01,0.818,0.68,1.473,1.497,1.464H18.79c0.819,0.01,1.492-0.645,1.503-1.464V3.245   c-0.012-0.819-0.685-1.474-1.503-1.463" />
+                <path id="Path_2526"
+                  d="M22.603,19.451c-0.764,0.007-1.378,0.633-1.37,1.397c0.007,0.764,0.633,1.378,1.397,1.37   c0.764-0.007,1.378-0.633,1.37-1.397c-0.007-0.754-0.617-1.363-1.37-1.37H22.603 M22.635,22.059   c-0.67,0.011-1.254-0.522-1.265-1.192c-0.011-0.67,0.523-1.222,1.193-1.233c0.67-0.011,1.222,0.523,1.233,1.193   c0,0.007,0,0.013,0,0.02C23.81,21.502,23.29,22.045,22.635,22.059h-0.031" />
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr class="footer-top-divider">
+  <div class="footer-bottom">
+    <div>© 1993—2023 Noventiq</div>
+    <ul class="footer-bottom-list">
+      <li class="footer-bottom-list-item footer-bottom-list__item"><a class="footer-bottom-list__link" href="#">Terms &
+          Conditions</a></li>
+      <li class="footer-bottom-list-item footer-bottom-list__item"><a class="footer-bottom-list__link"
+          href="#">Knowledge Base</a></li>
+    </ul>
+  </div>
+</footer>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
